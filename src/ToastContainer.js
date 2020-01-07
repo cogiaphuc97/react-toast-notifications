@@ -3,7 +3,6 @@
 
 import { jsx } from '@emotion/core';
 import React, { type Node } from 'react';
-import { TransitionGroup } from 'react-transition-group';
 
 import type { Placement } from './types';
 import { gutter } from './ToastElement';
@@ -34,7 +33,7 @@ export const ToastContainer = ({
       boxSizing: 'border-box',
       maxHeight: '100%',
       overflowX: 'hidden',
-      overflowY: 'auto',
+      overflowY: 'hidden',
       padding: gutter,
       pointerEvents: hasToasts ? null : 'none',
       position: 'fixed',
